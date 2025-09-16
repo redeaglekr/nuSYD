@@ -19,3 +19,8 @@ print("Your numax = {:.4f} +/- {:.4f} $\mu$Hz".format(results["numax"], results[
 
 The algorithm is good in detecting oscillations without an initial guess, in most cases :-)
 
+Check todo list for future works!!!
+
+Contact me at : skal9597@uni.sydney.edu.au for an suggestions.
+
+
