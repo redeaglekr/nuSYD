@@ -1,6 +1,3 @@
-# Import the usual suspects ...
-import sys
-sys.path.append("/home/redaegle/gen/lib64/python3.12/site-packages/")
 import numpy as np
 import matplotlib.pyplot as plt
 from astropy.convolution import convolve_fft, Gaussian1DKernel
@@ -366,22 +363,4 @@ class nuSYD:
         error = np.nanstd(results) / np.sqrt(self.mc_iter)
 
         return error
-            
-
-       
-        
-
-
-##name =149901871
-##tic = name
-##
-##
-##
-##time = np.load("/home/redaegle/usyd/tess_cvz/qlp_ctd_5d_rgcut_251124/TIC"+str(int(tic))+"_tess_qlp_ctd_5d.npy")[:,0]  ######your lightcurve file, for me it is this one.  Other users can give their own path
-##flux = np.load("/home/redaegle/usyd/tess_cvz/qlp_ctd_5d_rgcut_251124/TIC"+str(int(tic))+"_tess_qlp_ctd_5d.npy")[:,1]  ######your lightcurve file
-##        
-##
-##pipeline = nuSYD(time, flux, name = name,  lc_type="TESS",
-##                              guess_numax="from_lc", mc_iter=200,  plot=True)
-##result = pipeline.run()
 
