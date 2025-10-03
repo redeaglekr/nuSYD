@@ -16,7 +16,7 @@ results = runner.run()
 print("Your numax = {:.4f} +/- {:.4f} $\mu$Hz".format(results["numax"], results["errors"])
 
 ```
-Set ```python mc_iter = False (by default)```, if you only need numax.
+Set ``` mc_iter = False (by default)```, if you only need numax.
 
 The algorithm is good in detecting oscillations without an initial guess, in most cases :-)
 
